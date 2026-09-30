@@ -1,134 +1,124 @@
 #result-container {
-    position: relative;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .result-header {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333;
 }
 
 .result-header h2 {
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.8rem;
 }
 
 .result-header p,
 .classification-heading p {
-    color: #aeb3c7;
+    color: #ccc;
+    font-size: 0.9rem;
     line-height: 1.5;
 }
 
 .result-card {
-    padding: 1.4rem;
-    border: 1px solid #343953;
-    border-radius: 16px;
-    background: linear-gradient(145deg, #20243b, #171a2d);
+    padding: 1rem;
+    border: 1px solid #444;
+    background-color: #181a2c;
     text-align: center;
+    border-radius: 8px;
 }
 
 .result-title {
-    margin-bottom: 0.35rem;
-    color: #999fb7;
-    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+    color: #aaa;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
 }
 
 #imc-number {
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
-    font-weight: 800;
+    margin-bottom: 0.4rem;
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 
 #imc-info {
-    color: #c7cbd8;
+    color: #ccc;
     font-size: 1rem;
 }
 
 #imc-info strong {
-    margin-left: 0.25rem;
+    margin-left: 0.2rem;
 }
 
 .classification-heading {
-    margin-top: 1.7rem;
+    margin-top: 1.5rem;
 }
 
 .classification-heading h3 {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
 }
 
 #imc-table {
     margin-top: 1rem;
-    overflow: hidden;
-    border: 1px solid #343953;
-    border-radius: 14px;
-    font-size: 0.87rem;
+    font-size: 0.85rem;
 }
 
 .table-header,
 .table-data {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 0.65fr;
-    align-items: center;
-    gap: 0.8rem;
-    padding: 0.85rem 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #444;
 }
 
 .table-header {
-    background: #252a43;
-    color: #cdd1e0;
+    font-weight: bold;
+    color: #ccc;
 }
 
-.table-header h4 {
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+.table-header h4,
+.table-data p {
+    flex: 1;
 }
 
-.table-data {
-    border-top: 1px solid #2e3349;
-    color: #d8dbe6;
-}
-
-.table-data:first-of-type {
-    border-top: 0;
-}
-
-.table-data.current {
-    background: rgba(117, 103, 255, 0.1);
-    box-shadow: inset 3px 0 0 #7567ff;
-}
-
-.table-data p:last-child,
-.table-header h4:last-child {
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+    max-width: 70px;
     text-align: center;
 }
 
+.table-data {
+    color: #ddd;
+}
+
+.table-data.current {
+    background-color: #232641;
+    border-bottom: 1px solid #555;
+    padding: 0.5rem;
+}
+
 .good {
-    color: #4fe08a;
+    color: #12db34;
 }
 
 .low {
-    color: #e2ce4d;
+    color: #dbce12;
 }
 
 .medium {
-    color: #f39a45;
+    color: #db6212;
 }
 
 .high {
-    color: #ff6678;
+    color: #db1912;
 }
 
 @media (max-width: 500px) {
     .table-header,
     .table-data {
-        grid-template-columns: 1.25fr 0.95fr 0.55fr;
-        gap: 0.5rem;
-        padding: 0.75rem 0.65rem;
-    }
-
-    #imc-table {
         font-size: 0.78rem;
     }
 }

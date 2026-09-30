@@ -1,37 +1,36 @@
 #calc-container {
-    position: relative;
-    z-index: 1;
+    width: 100%;
 }
 
 .calc-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333;
 }
 
 .calc-label {
-    display: inline-block;
-    margin-bottom: 0.7rem;
-    color: #a9a4ff;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #aaa;
+    font-size: 0.75rem;
     text-transform: uppercase;
 }
 
 #calc-container h1 {
-    margin-bottom: 0.65rem;
-    font-size: clamp(2rem, 5vw, 2.6rem);
-    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-size: 1.9rem;
 }
 
 .calc-heading p {
-    color: #b6bacd;
-    line-height: 1.6;
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .form-inputs {
     display: flex;
     flex-direction: column;
-    gap: 1.15rem;
+    gap: 1rem;
 }
 
 .form-control {
@@ -40,68 +39,64 @@
 }
 
 .form-control label {
-    margin-bottom: 0.55rem;
-    color: #eceeff;
+    margin-bottom: 0.4rem;
+    color: #fff;
     font-size: 0.95rem;
-    font-weight: 700;
 }
 
 .input-wrapper {
     display: flex;
     align-items: center;
+    border: 1px solid #444;
+    background-color: #111423;
+    border-radius: 6px;
     overflow: hidden;
-    border: 1px solid #3b4059;
-    border-radius: 12px;
-    background: #111423;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .input-wrapper:focus-within {
-    border-color: #7567ff;
-    box-shadow: 0 0 0 3px rgba(117, 103, 255, 0.14);
+    border-color: #777;
 }
 
 .form-control input {
     width: 100%;
-    padding: 1rem;
-    border: 0;
-    outline: 0;
-    background: transparent;
+    padding: 0.85rem 0.7rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
     color: #fff;
     font-size: 1rem;
 }
 
 .form-control input::placeholder {
-    color: #70758b;
+    color: #777;
 }
 
 .input-wrapper span {
-    padding-right: 1rem;
-    color: #8f94ac;
-    font-weight: 700;
+    padding-right: 0.75rem;
+    color: #aaa;
+    font-size: 0.9rem;
 }
 
 .form-control small {
-    margin-top: 0.4rem;
-    color: #777d95;
-    font-size: 0.78rem;
+    margin-top: 0.3rem;
+    color: #888;
+    font-size: 0.75rem;
 }
 
 .form-error {
     margin-top: 1rem;
-    padding: 0.8rem 0.95rem;
-    border: 1px solid rgba(255, 102, 120, 0.3);
-    border-radius: 10px;
-    background: rgba(255, 102, 120, 0.08);
+    padding: 0.7rem;
+    border: 1px solid #7b343d;
+    background-color: #351b20;
     color: #ff9dab;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
 }
 
 .action-control {
     display: flex;
-    justify-content: space-between;
     gap: 1rem;
-    margin-top: 1.7rem;
+    margin-top: 1.5rem;
 }
 
 @media (max-width: 500px) {

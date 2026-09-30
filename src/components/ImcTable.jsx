@@ -4,8 +4,7 @@ const ImcTable = ({ data, imc, info, infoClass }) => {
   return (
     <div id="result-container">
       <div className="result-header">
-        <span className="calc-label">Resultado</span>
-        <h2>Seu resultado</h2>
+        <h2>Resultado</h2>
         <p>Confira seu IMC e a classificação correspondente.</p>
       </div>
 

@@ -58,7 +58,6 @@ const ImcCalc = ({ calcImc }) => {
   return (
     <div id="calc-container">
       <div className="calc-heading">
-        <span className="calc-label">Application Development</span>
         <h1>Calculadora de IMC</h1>
         <p>Preencha seus dados para descobrir seu índice de massa corporal.</p>
       </div>

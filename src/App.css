@@ -1,25 +1,13 @@
 .container {
-    position: relative;
-    overflow: hidden;
-}
-
-.container::before {
-    content: '';
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    top: -95px;
-    right: -80px;
-    border-radius: 50%;
-    background: rgba(115, 95, 255, 0.18);
+    width: 100%;
 }
 
 .result-actions {
     display: flex;
     justify-content: center;
-    margin-top: 1.4rem;
+    margin-top: 1.5rem;
 }
 
 .result-actions button {
-    max-width: 260px;
+    max-width: 220px;
 }
