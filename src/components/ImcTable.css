@@ -1,0 +1,134 @@
+#result-container {
+    position: relative;
+    z-index: 1;
+}
+
+.result-header {
+    margin-bottom: 1.5rem;
+}
+
+.result-header h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.result-header p,
+.classification-heading p {
+    color: #aeb3c7;
+    line-height: 1.5;
+}
+
+.result-card {
+    padding: 1.4rem;
+    border: 1px solid #343953;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #20243b, #171a2d);
+    text-align: center;
+}
+
+.result-title {
+    margin-bottom: 0.35rem;
+    color: #999fb7;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+#imc-number {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#imc-info {
+    color: #c7cbd8;
+    font-size: 1rem;
+}
+
+#imc-info strong {
+    margin-left: 0.25rem;
+}
+
+.classification-heading {
+    margin-top: 1.7rem;
+}
+
+.classification-heading h3 {
+    margin-bottom: 0.25rem;
+}
+
+#imc-table {
+    margin-top: 1rem;
+    overflow: hidden;
+    border: 1px solid #343953;
+    border-radius: 14px;
+    font-size: 0.87rem;
+}
+
+.table-header,
+.table-data {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.65fr;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.85rem 0.9rem;
+}
+
+.table-header {
+    background: #252a43;
+    color: #cdd1e0;
+}
+
+.table-header h4 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.table-data {
+    border-top: 1px solid #2e3349;
+    color: #d8dbe6;
+}
+
+.table-data:first-of-type {
+    border-top: 0;
+}
+
+.table-data.current {
+    background: rgba(117, 103, 255, 0.1);
+    box-shadow: inset 3px 0 0 #7567ff;
+}
+
+.table-data p:last-child,
+.table-header h4:last-child {
+    text-align: center;
+}
+
+.good {
+    color: #4fe08a;
+}
+
+.low {
+    color: #e2ce4d;
+}
+
+.medium {
+    color: #f39a45;
+}
+
+.high {
+    color: #ff6678;
+}
+
+@media (max-width: 500px) {
+    .table-header,
+    .table-data {
+        grid-template-columns: 1.25fr 0.95fr 0.55fr;
+        gap: 0.5rem;
+        padding: 0.75rem 0.65rem;
+    }
+
+    #imc-table {
+        font-size: 0.78rem;
+    }
+}
